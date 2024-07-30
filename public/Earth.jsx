@@ -17,7 +17,7 @@ export default function Model(props) {
   const { actions } = useAnimations(animations, group)
 
   useFrame((state, delta) => {
-    group.current.rotation.y += delta * 1.9 // Adjust the rotation speed as needed
+    group.current.rotation.y += delta * 1 // Adjust the rotation speed as needed
   })
   return (
     <group ref={group} {...props} dispose={null}>
